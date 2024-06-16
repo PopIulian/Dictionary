@@ -8,7 +8,7 @@ function addWord() {
     }
     dictionary[word.toLowerCase()] = true;
     document.getElementById("add-word").value = "";
-    document.getElementById("message").textContent ="Word saved successfully!";
+    document.getElementById("message").textContent = "Word saved successfully!";
 }
 
 function searchWord() {
@@ -18,8 +18,8 @@ function searchWord() {
         return;
     }
     if (dictionary[word.toLowerCase()]) {
-        document.getElementById("message").textContent ="The word is in the dictionary.";
+        document.getElementById("message").textContent = "The word is in the dictionary.";
     } else {
-        document.getElementById("message").textContent ="The word is not in the dictionary.";
+        document.getElementById("message").textContent = "The word is not in the dictionary.";
     }
 }
